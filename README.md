@@ -6,3 +6,8 @@ It generate a simple text in italian in one two, or  three paragraphs withe diff
 ```
 source .venv/bin/activate
 ```
+
+## testes ##
+```
+uv run pytest
+```
