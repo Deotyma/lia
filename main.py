@@ -5,7 +5,7 @@ from google.genai import types
 from dotenv import load_dotenv
 
 
-def main():
+def italianText():
     load_dotenv()
 
     args = sys.argv[1:]
@@ -66,4 +66,4 @@ def generate_content(client, messages):
 
 
 if __name__ == "__main__":
-    main()
+    italianText()

@@ -26,7 +26,7 @@ def test_argument_mode(capsys, monkeypatch):
 
     # Simulate running main with args
     with mock.patch("sys.argv", ["main.py", "Italian A1 text, 1 paragraph(s), topic: dog."]):
-        main.main()
+        main.italianText()
 
     out, err = capsys.readouterr()
     assert "Prompt tokens:" in out
