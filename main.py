@@ -25,7 +25,7 @@ def main():
 
         level = input("Which level (A1–C2)? ").strip().upper()
         if level not in ["A1", "A2", "B1", "B2", "C1", "C2"]:
-            print("⚠️ Invalid level. Defaulting to A1.")
+            print("Invalid level. Defaulting to A1.")
             level = "A1"
 
         try:
@@ -33,12 +33,11 @@ def main():
             if paragraphs not in [1, 2, 3]:
                 raise ValueError
         except ValueError:
-            print("⚠️ Invalid number. Defaulting to 1 paragraph.")
+            print("Invalid number. Defaulting to 1 paragraph.")
             paragraphs = 1
 
         topic = input("Which topic? ").strip()
         if not topic:
-            print("⚠️ Empty topic. Defaulting to 'dog'.")
             topic = "dog"
 
         user_prompt = f"Italian {level} text, {paragraphs} paragraph(s), topic: {topic}."

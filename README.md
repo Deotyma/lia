@@ -4,7 +4,7 @@ It generate a simple text in italian in one two, or  three paragraphs withe diff
 
 ## activate an environment ##
 ```
-source .venv/bin/activate
+source .venv/Scripts/activate
 ```
 
 ## testes ##
